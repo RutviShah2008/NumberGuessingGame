@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <title>JavaScript Number Guessing Game</title>
+  </head>
+
+  <body>
+    <div class="bg">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">JavaScript Number Guessing Game</h1>
+        <hr>
+        <h4>Super Awesome Guess a Number Game!!!</h4>
+        <p>
+          <div class="alert alert-info">
+            <strong> Guess &nbsp;: </strong>&nbsp;Between 1 and <span id="numLimit">100</span>
+          </div>
+        </p>
+      </div>
+      <div class="alert alert-success">
+        <section id="message">
+        </section>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="number" style="font-size:20px;">Your Guess:</label>
+            <input class ="form-control w-25" type="number" id="guessInput" min="1" max="100" step="1" value="1" />
+          </div>
+          <button class="btn btn-primary" id="guessBtn">Guess</button>
+        </div>
+        <div class="col-sm-5">
+          <div class="card text-white bg-info mb-3 w-100">
+            <div class="card-header" style="text-align:center; font-size:50px;">SCOREBOARD
+            </div>
+            <div class="card-body-3">
+              <p style="font-size:30px;">&nbsp;Score: <span id="score">0</span>
+              <p style="font-size:30px;" class="card-text">&nbsp;GuessLeft:<span id="guessLimit">&nbsp;10</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-white bg-info mb-3 w-100">
+            <div class="card-header" style="text-align:center;font-size:50px;">RULES
+            </div>
+            <div class="card-body">
+              <p style="font-size:20px;" class="card-text">You have 10 guesses in total to get the right answer.
+                The number of guesses remaining will be added to your score.</p>
+              <a class="btn btn-lg btn-danger" data-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample"> &nbsp;RULES </a>
+              <div class="collapse" id="collapseExample">
+                  <ul>
+                    <li>Choose number between 1 and 100 </li>
+                    <li>You have only 10 guess to win this game</li>
+                    <li>10 points willl be deducted at every wrong guess </li>
+                    <li>10 points willl be added on correct guess. </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 ">© 2019 Copyright:
+        <a href="#"> COMP1073- Rutvi Shah:(200390373)</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+<!-- Footer -->
+
+    <!-- Your code... -->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Shaun code -->
+    <!-- <script type="text/javascript" src="shaun-code.js"></script> -->
+        </div>
+  </body>
+</html>
